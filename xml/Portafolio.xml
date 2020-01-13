@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--<?xml-stylesheet type="text/xsl" href="../xslt/template.xslt"?>-->
+<Portafolio>
+  <Navegacion>
+    <Opcion Url="/Default.aspx?Id=0" Texto="Inicio" Id="0"></Opcion>
+    <Opcion Url="/Default.aspx?Id=1" Texto="Destacados" Id="1"></Opcion>
+    <Opcion Url="/Default.aspx?Id=2" Texto="Proyectos recientes" Id="2"></Opcion>
+    <Opcion Url="/Default.aspx?Id=3" Texto="Acerca de" Id="3"></Opcion>
+    <Opcion Url="/Default.aspx?Id=4" Texto="Entradas" Id="4"></Opcion>
+    <Opcion Url="/Default.aspx?Id=5" Texto="Contacto" Id="5"></Opcion>
+  </Navegacion>
+  <Menu>
+
+  </Menu>
+  <Carrusel>
+    <Producto>
+      <Imagen>/img/featured_1.jpg</Imagen>
+      <Nombre>Nombre 1</Nombre>
+      <Tecnica><![CDATA[Punto atrás]]></Tecnica>
+      <Descripcion><![CDATA[Bordado a mano]]></Descripcion>
+    </Producto>
+    <Producto>
+      <Imagen>/img/featured_2.jpg</Imagen>
+      <Nombre>Nombre 2</Nombre>
+      <Tecnica><![CDATA[Punto atrás]]></Tecnica>
+      <Descripcion><![CDATA[Bordado a mano]]></Descripcion>
+    </Producto>
+    <Producto>
+      <Imagen>/img/featured_3.jpg</Imagen>
+      <Nombre>Nombre 3</Nombre>
+      <Tecnica><![CDATA[Punto atrás]]></Tecnica>
+      <Descripcion><![CDATA[Bordado a mano]]></Descripcion>
+    </Producto>
+    <Producto>
+      <Imagen>/img/featured_1.jpg</Imagen>
+      <Nombre>Nombre 4</Nombre>
+      <Tecnica><![CDATA[Punto atrás]]></Tecnica>
+      <Descripcion><![CDATA[Bordado a mano]]></Descripcion>
+    </Producto>
+  </Carrusel>
+  <Seccion>
+    <Titulo Id="1" Normal="Productos" Negritas="Destacados" Descripcion="Estos son los productos populares"></Titulo>
+    <Titulo Id="2" Normal="Productos2" Negritas="Mis" Descripcion="Descripcion de mis productos"></Titulo>
+    <Titulo Id="3" Normal="La Responde" Negritas="Coshipigua" Descripcion="Descripcion de mis productos"></Titulo>
+    <Titulo Id="4" Normal="Productos4" Negritas="Mis" Descripcion="Descripcion de mis productos"></Titulo>
+    <Titulo Id="5" Normal="Productos5" Negritas="Mis" Descripcion="Descripcion de mis productos"></Titulo>
+  </Seccion>
+  <Proyectos>
+    <Proyecto>
+      <Imagen>/img/portfolio_1.jpg</Imagen>
+      <Bootstrap>col-md-8</Bootstrap>
+    </Proyecto>
+    <Proyecto>
+      <Imagen>/img/portfolio_2.jpg</Imagen>
+      <Bootstrap>col-md-4</Bootstrap>
+    </Proyecto>
+    <Proyecto>
+      <Imagen>/img/portfolio_3.jpg</Imagen>
+      <Bootstrap>col-md-4</Bootstrap>
+    </Proyecto>
+    <Proyecto>
+      <Imagen>/img/portfolio_4.jpg</Imagen>
+      <Bootstrap>col-md-4</Bootstrap>
+    </Proyecto>
+    <Proyecto>
+      <Imagen>/img/portfolio_5.jpg</Imagen>
+      <Bootstrap>col-md-8</Bootstrap>
+    </Proyecto>
+  </Proyectos>
+  <Entradas>
+    <Mes Nombre="Octubre 2019" Id="Oct2019">
+      <Entrada>
+        <Imagen>/img/blog_1.jpg</Imagen>
+        <Titulo>Bordado 1</Titulo>
+        <Fecha>Octubre 05 2019</Fecha>
+        <Contenido>Bordado realizado en octubre de 2019.</Contenido>
+      </Entrada>
+      <Entrada>
+        <Imagen>/img/blog_2.jpg</Imagen>
+        <Titulo>Bordado 2</Titulo>
+        <Fecha>Octubre 15 2019</Fecha>
+        <Contenido>Bordado realizado en octubre de 2019</Contenido>
+      </Entrada>
+      <Entrada>
+        <Imagen>/img/blog_3.jpg</Imagen>
+        <Titulo>Bordado 3</Titulo>
+        <Fecha>Octubre 27 2019</Fecha>
+        <Contenido>Bordado realizado en octubre de 2019</Contenido>
+      </Entrada>
+    </Mes>
+    <Mes Nombre="Noviembre 2019" Id="Nov2019">
+      <Entrada>
+        <Imagen>/img/blog_1.jpg</Imagen>
+        <Titulo>Bordado 1</Titulo>
+        <Fecha>Noviembre 05 2019</Fecha>
+        <Contenido>Bordado realizado en noviembre de 2019</Contenido>
+      </Entrada>
+      <Entrada>
+        <Imagen>/img/blog_2.jpg</Imagen>
+        <Titulo>Bordado 2</Titulo>
+        <Fecha>Noviembre 15 2019</Fecha>
+        <Contenido>Bordado realizado en noviembre de 2019</Contenido>
+      </Entrada>
+      <Entrada>
+        <Imagen>/img/blog_3.jpg</Imagen>
+        <Titulo>Bordado 3</Titulo>
+        <Fecha>Noviembre 27 2019</Fecha>
+        <Contenido>Bordado realizado en noviembre de 2019</Contenido>
+      </Entrada>
+    </Mes>
+    <Mes Nombre="Diciembre 2019" Id="Dic2019">
+      <Entrada>
+        <Imagen>/img/blog_1.jpg</Imagen>
+        <Titulo>Bordado 1</Titulo>
+        <Fecha>Diciembre 05 2019</Fecha>
+        <Contenido>Bordado realizado en diciembre de 2019</Contenido>
+      </Entrada>
+      <Entrada>
+        <Imagen>/img/blog_2.jpg</Imagen>
+        <Titulo>Bordado 2</Titulo>
+        <Fecha>Diciembre 15 2019</Fecha>
+        <Contenido>Bordado realizado en diciembre de 2019</Contenido>
+      </Entrada>
+      <Entrada>
+        <Imagen>/img/blog_3.jpg</Imagen>
+        <Titulo>Bordado 3</Titulo>
+        <Fecha>Diciembre 27 2019</Fecha>
+        <Contenido>Bordado realizado en diciembre de 2019</Contenido>
+      </Entrada>
+    </Mes>
+    <Mes Nombre="Enero 2020" Id="Ene2020">
+      <Entrada>
+        <Imagen>/img/blog_1.jpg</Imagen>
+        <Titulo>Bordado 1</Titulo>
+        <Fecha>Enero 13 2020</Fecha>
+        <Contenido>Bordado realizado en enero de 2020</Contenido>
+      </Entrada>
+      <Entrada>
+        <Imagen>/img/blog_2.jpg</Imagen>
+        <Titulo>Bordado 2</Titulo>
+        <Fecha>Enero 20 2020</Fecha>
+        <Contenido>Bordado realizado en enero de 2020</Contenido>
+      </Entrada>
+      <Entrada>
+        <Imagen>/img/blog_3.jpg</Imagen>
+        <Titulo>Bordado 3</Titulo>
+        <Fecha>Enero 29 2020</Fecha>
+        <Contenido>Bordado realizado en enero de 2020</Contenido>
+      </Entrada>
+    </Mes>
+  </Entradas>
+
+</Portafolio>
