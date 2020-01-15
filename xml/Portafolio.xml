@@ -9,9 +9,15 @@
     <Opcion Url="/Default.aspx?Id=4" Texto="Entradas" Id="4"></Opcion>
     <Opcion Url="/Default.aspx?Id=5" Texto="Contacto" Id="5"></Opcion>
   </Navegacion>
-  <Menu>
-
-  </Menu>
+  <Social>
+    <Direccion to="https://www.facebook.com/coshipigua/">
+      <Icono><![CDATA[fa fa-facebook]]></Icono>
+    </Direccion><Direccion to="https://twitter.com/coshipigu">
+      <Icono><![CDATA[fa fa-twitter]]></Icono>
+    </Direccion><Direccion to="https://www.instagram.com/coshipigua">
+      <Icono><![CDATA[fa fa-instagram]]></Icono>
+    </Direccion>
+  </Social>
   <Carrusel>
     <Producto>
       <Imagen>/img/featured_1.jpg</Imagen>
@@ -43,7 +49,7 @@
     <Titulo Id="2" Normal="Productos2" Negritas="Mis" Descripcion="Descripcion de mis productos"></Titulo>
     <Titulo Id="3" Normal="La Responde" Negritas="Coshipigua" Descripcion="Descripcion de mis productos"></Titulo>
     <Titulo Id="4" Normal="Productos4" Negritas="Mis" Descripcion="Descripcion de mis productos"></Titulo>
-    <Titulo Id="5" Normal="Productos5" Negritas="Mis" Descripcion="Descripcion de mis productos"></Titulo>
+    <Titulo Id="5" Normal="Contacto" Negritas="Coshipigua" Descripcion="Descripcion de mis productos"></Titulo>
   </Seccion>
   <Proyectos>
     <Proyecto>

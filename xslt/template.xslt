@@ -33,25 +33,6 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
-
-        <!--<link rel="stylesheet" href="../css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="../css/bootstrap-theme.min.css"/>
-        <link rel="stylesheet" href="../css/fontAwesome.css"/>
-        <link rel="stylesheet" href="../css/light-box.css"/>
-        <link rel="stylesheet" href="../css/owl-carousel.css"/>
-        <link rel="stylesheet" href="../css/templatemo-style.css"/>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet"/>
-        <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        -->
-        <!--<script>
-                    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
-                  </script>-->
-        <!--
-        <script src="../js/vendor/bootstrap.min.js"></script>
-        <script src="../js/plugins.js"></script>
-        <script src="../js/main.js"></script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>-->
       </head>
       <body>
         <header class="nav-down responsive-nav hidden-lg hidden-md">
@@ -65,7 +46,6 @@
           <div id="main-nav" class="collapse navbar-collapse">
             <nav>
               <ul class="nav navbar-nav">
-
                 <!--INICIA FOREACH-->
                 <xsl:for-each select="Navegacion/Opcion">
                   <xsl:choose>
@@ -85,17 +65,15 @@
                     </xsl:otherwise>
                   </xsl:choose>
                 </xsl:for-each>
-                <!--FIN FOREACH-->                
+                <!--FIN FOREACH-->
               </ul>
             </nav>
           </div>
-
         </header>
-
         <div class="sidebar-navigation hidde-sm hidden-xs">
           <div class="logo">
-            <a href="#">
-              Sen<em>tra</em>
+            <a href="/Default.aspx?Id=0">
+              Coshi<em>Pigua</em>
             </a>
           </div>
           <nav>
@@ -127,21 +105,16 @@
             </ul>
           </nav>
           <ul class="social-icons">
-            <li>
-              <a href="https://www.facebook.com/coshipigua/" target="_blank">
-                <i class="fa fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://twitter.com/coshipigua" target="_blank">
-                <i class="fa fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/coshipigua/" target="_blank">
-                <i class="fa fa-instagram"></i>
-              </a>
-            </li>
+            <!--INICIA FOREACH-->
+            <xsl:for-each select="Social/Direccion">
+              <li>
+                <a href="{@to}" target="_blank">
+                  <i class="{Icono}"></i>
+                </a>
+              </li>
+
+            </xsl:for-each>
+            <!--TERMINA FOREACH-->
           </ul>
         </div>
 
@@ -502,53 +475,49 @@
   </xsl:template>
 
   <xsl:template name="Contacto">
+    <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCWeeateTaYGqsHhNcmoDfT7Us-vLDZVPs&amp;sensor=false&amp;language=es"></script>
+    <script src="js/geolocalizacion.js"></script>
     <section id="contact" class="content-section">
-      <div id="map">
-
-        <!-- How to change your own map point
-                           1. Go to Google Maps
-                           2. Click on your location point
-                           3. Click "Share" and choose "Embed map" tab
-                           4. Copy only URL and paste it within the src="" field below
-                    -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.8373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi+Central+Market!5e0!3m2!1sen!2sth!4v1532967884907" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+      <div id="google-map">
+        <div id="mapa">
+          <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.8373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi+Central+Market!5e0!3m2!1sen!2sth!4v1532967884907" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen=""></iframe>-->
+        </div>
       </div>
       <div id="contact-content">
         <div class="section-heading">
           <h1>
-            Contact<br>
-              <em>Sentra</em>
+            <xsl:value-of select="Seccion/Titulo[@Id=5]/@Normal"/>
+            <br>
+              <em>
+                <xsl:value-of select="Seccion/Titulo[@Id=5]/@Negritas"/>
+              </em>
             </br>
           </h1>
           <p>
-            Curabitur hendrerit mauris mollis ipsum vulputate rutrum.
-            <br>
-              Phasellus luctus odio eget dui imperdiet.
-            </br>
+            <xsl:value-of select="Seccion/Titulo[@Id=5]/@Descripcion"/>
           </p>
-
         </div>
         <div class="section-content">
-          <form id="contact" action="#" method="post">
+          <form id="contact" action="Contacto.aspx" method="post">
             <div class="row">
               <div class="col-md-4">
                 <fieldset>
-                  <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required=""/>
+                  <input name="name" type="text" class="form-control" id="name" placeholder="¿Cuál es tu nombre?" required=""/>
                 </fieldset>
               </div>
               <div class="col-md-4">
                 <fieldset>
-                  <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required=""/>
+                  <input name="email" type="email" class="form-control" id="email" placeholder="Escribe tu correo electrónico" required=""/>
                 </fieldset>
               </div>
               <div class="col-md-4">
                 <fieldset>
-                  <input name="subject" type="text" class="form-control" id="subject" placeholder="Subject..." required=""/>
+                  <input name="subject" type="text" class="form-control" id="subject" placeholder="Asunto" required=""/>
                 </fieldset>
               </div>
               <div class="col-md-12">
                 <fieldset>
-                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                  <textarea name="message" rows="6" class="form-control" id="message" placeholder="Cuéntanos que necesitas..." required=""></textarea>
                 </fieldset>
               </div>
               <div class="col-md-12">
@@ -561,6 +530,14 @@
         </div>
       </div>
     </section>
+    <script>
+      <![CDATA[
+        $(document).ready(function(){      
+          getGeo();
+          dibujaMapa(19.071984, -98.218453);
+        });
+    ]]>
+    </script>
   </xsl:template>
 
 </xsl:stylesheet>
