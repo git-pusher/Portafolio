@@ -12,11 +12,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
         <title>Coshipigua</title>
         <!-- Sentra Template https://templatemo.com/tm-518-sentra -->
-
         <meta name="description" content=""/>
-        <!--<link rel="apple-touch-icon" href="apple-touch-icon.png"/>-->
 
-        <!--QUITAR EL ../-->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
         <link rel="stylesheet" href="css/fontAwesome.css"/>
@@ -79,7 +77,7 @@
           <nav>
             <ul>
               <!--INICIA FOREACH-->
-              <xsl:for-each select="Navegacion/Opcion" >
+              <xsl:for-each select="Navegacion/Opcion">
                 <xsl:choose>
                   <xsl:when test="$TipoMenu=@Id">
                     <li>
@@ -117,7 +115,6 @@
             <!--TERMINA FOREACH-->
           </ul>
         </div>
-
         <div class="page-content">
           <xsl:choose>
             <xsl:when test="$TipoMenu=1">
@@ -147,50 +144,6 @@
             </p>
           </section>
         </div>
-
-
-
-        <!--<script>
-            // Hide Header on on scroll down
-            var didScroll;
-            var lastScrollTop = 0;
-            var delta = 5;
-            var navbarHeight = $('header').outerHeight();
-
-            $(window).scroll(function(event){
-            didScroll = true;
-            });
-
-            setInterval(function() {
-            if (didScroll) {
-            hasScrolled();
-            didScroll = false;
-            }
-            }, 250);
-
-            function hasScrolled() {
-            var st = $(this).scrollTop();
-
-            // Make sure they scroll more than delta
-            if(Math.abs(lastScrollTop - st) &lt;= delta)
-            return;
-
-            // If they scrolled down and are past the navbar, add class .nav-up.
-            // This is necessary so you never see what is "behind" the navbar.
-            if (st > lastScrollTop &amp;&amp; st > navbarHeight){
-            // Scroll Down
-            $('header').removeClass('nav-down').addClass('nav-up');
-            } else {
-            // Scroll Up
-            if(st + $(window).height() &lt; $(document).height()) {
-                    $('header').removeClass('nav-up').addClass('nav-down');
-                }
-            }
-            
-            lastScrollTop = st;
-        }
-          </script>-->
-
       </body>
     </html>
   </xsl:template>

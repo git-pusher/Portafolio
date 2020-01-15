@@ -73,9 +73,6 @@ jQuery(document).ready(function($) {
         var contentSection = $('.content-section, .main-banner');
         var navigation = $('nav');
         
-
-    //////////////////////////////////////////////////////////////////////////////////////////////////////
-    //Comento para que la página haga el postback
         //when a nav link is clicked, smooth scroll to the section
         //navigation.on('click', 'a', function(event){
         //    event.preventDefault(); //prevents previous event
@@ -83,8 +80,7 @@ jQuery(document).ready(function($) {
         //});
         
         //update navigation on scroll...
-        $(window).on('scroll', function () {
-            //No invoco la función
+        $(window).on('scroll', function(){
             //updateNavigation();
         })
         //...and when the page starts
@@ -113,7 +109,7 @@ jQuery(document).ready(function($) {
 
 
         $('.button a[href*=#]').on('click', function(e) {
-          e.preventDefault();
+          //e.preventDefault();
           $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top -0 }, 500, 'linear');
         });
 
