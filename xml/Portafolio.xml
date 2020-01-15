@@ -149,5 +149,7 @@
       </Entrada>
     </Mes>
   </Entradas>
-
+  <Emojis>
+    <Emoji><![CDATA[💚]]></Emoji>
+  </Emojis>
 </Portafolio>

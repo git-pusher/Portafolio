@@ -10,7 +10,7 @@
       <head>
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-        <title>Portafolio</title>
+        <title>Coshipigua</title>
         <!-- Sentra Template https://templatemo.com/tm-518-sentra -->
 
         <meta name="description" content=""/>
@@ -85,24 +85,7 @@
                     </xsl:otherwise>
                   </xsl:choose>
                 </xsl:for-each>
-                <!--<li>
-                  <a href="#top">Prueba</a>
-                </li>
-                <li>
-                  <a href="#featured">Featured</a>
-                </li>
-                <li>
-                  <a href="#projects">Recent Projects</a>
-                </li>
-                <li>
-                  <a href="#video">Presentation</a>
-                </li>
-                <li>
-                  <a href="#blog">Blog Entries</a>
-                </li>
-                <li>
-                  <a href="#contact">Contact Us</a>
-                </li>-->
+                <!--FIN FOREACH-->                
               </ul>
             </nav>
           </div>
@@ -140,156 +123,28 @@
                   </xsl:otherwise>
                 </xsl:choose>
               </xsl:for-each>
-              <!--<li>
-                <a href="#top">
-                  <span class="rect"></span>
-                  <span class="circle"></span>
-                  Home
-                </a>
-              </li>
-              <li>
-                <a href="#featured">
-                  <span class="rect"></span>
-                  <span class="circle"></span>
-                  Featured
-                </a>
-              </li>
-              <li>
-                <a href="#projects">
-                  <span class="rect"></span>
-                  <span class="circle"></span>
-                  Recent Work
-                </a>
-              </li>
-              <li>
-                <a href="#video">
-                  <span class="rect"></span>
-                  <span class="circle"></span>
-                  Presentation
-                </a>
-              </li>
-              <li>
-                <a href="#blog">
-                  <span class="rect"></span>
-                  <span class="circle"></span>
-                  Blog Entires
-                </a>
-              </li>
-              <li>
-                <a href="#contact">
-                  <span class="rect"></span>
-                  <span class="circle"></span>
-                  Contact Us
-                </a>
-              </li>-->
+              <!--FIN FOREACH-->
             </ul>
           </nav>
           <ul class="social-icons">
             <li>
-              <a href="#">
+              <a href="https://www.facebook.com/coshipigua/" target="_blank">
                 <i class="fa fa-facebook"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://twitter.com/coshipigua" target="_blank">
                 <i class="fa fa-twitter"></i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/coshipigua/" target="_blank">
                 <i class="fa fa-instagram"></i>
               </a>
             </li>
           </ul>
         </div>
 
-
-        <!--<div class="slider">
-          <div class="Modern-Slider content-section" id="top">
-            -->
-        <!-- Item -->
-        <!--
-            <div class="item item-1">
-              <div class="img-fill">
-                <div class="image"></div>
-                <div class="info">
-                  <div>
-                    <h1>
-                      Beautiful Template<br>Sentra</br>
-                    </h1>
-                    <p>
-                      Sentra is free Bootstrap CSS Template by templatemo website.<br>
-                      Please share our site link to your friends.
-                    </br>
-                  </p>
-                    <div class="white-button button">
-                      <a href="#featured">Discover More</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            -->
-        <!-- // Item -->
-        <!--
-            -->
-        <!-- Item -->
-        <!--
-            <div class="item item-2">
-              <div class="img-fill">
-                <div class="image"></div>
-                <div class="info">
-                  <div>
-                    <h1>
-                      Please tell <br>your friends</br>
-                        </h1>
-                    <p>
-                      Support templatemo by sharing a link to your friends.
-                      <br>
-                      Thank you for helping us.
-                    </br>
-                  </p>
-                    <div class="white-button button">
-                      <a href="#featured">Share More</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            -->
-        <!-- // Item -->
-        <!--
-            -->
-        <!-- Item -->
-        <!--
-            <div class="item item-3">
-              <div class="img-fill">
-                <div class="image"></div>
-                <div class="info">
-                  <div>
-                    <h1>
-                      Suspendisse suscipit<br>
-                      nulla sed
-                    </br>
-                  </h1>
-                    <p>
-                      Vestibulum ante ipsum primis in faucibus orci luctus et ultrices <br>
-                      posuere cubilia Curae; Sed at massa turpis.
-                    </br>
-                  </p>
-
-                    <div class="white-button button">
-                      <a href="#featured">Learn More</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            -->
-        <!-- // Item -->
-        <!--
-          </div>
-        </div>-->
         <div class="page-content">
           <xsl:choose>
             <xsl:when test="$TipoMenu=1">
@@ -313,9 +168,9 @@
           </xsl:choose>
           <section class="footer">
             <p>
-              Copyright 2019 Rachel Espinosa
-
-
+              Copyright 2019 Con
+              <xsl:value-of select="Emojis/Emoji"></xsl:value-of>
+              <strong>Coshipigua</strong>
             </p>
           </section>
         </div>
@@ -631,18 +486,18 @@
                     <!--TERMINA FOREACH-->
                   </ul>
                 </div>
-               </xsl:for-each>
+              </xsl:for-each>
               <!--TERMINA FOREACH-->
 
 
-             
-             
 
 
-        </section>
-    </div>
-    </div>
-    </div>
+
+
+            </section>
+          </div>
+        </div>
+      </div>
     </section>
   </xsl:template>
 
