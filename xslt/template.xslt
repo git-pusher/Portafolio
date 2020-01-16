@@ -110,7 +110,6 @@
                   <i class="{Icono}"></i>
                 </a>
               </li>
-
             </xsl:for-each>
             <!--TERMINA FOREACH-->
           </ul>
@@ -147,10 +146,11 @@
       </body>
     </html>
   </xsl:template>
-
+  <!--Finaliza contenedor portafolio-->
   <xsl:template name="Inicio">
     <div class="slider">
       <div class="Modern-Slider content-section" id="top">
+        <!--ToDo-->
         <!-- Item -->
         <div class="item item-1">
           <div class="img-fill">
@@ -221,10 +221,11 @@
           </div>
         </div>
         <!-- // Item -->
+        <!--End ToDo-->
       </div>
     </div>
   </xsl:template>
-
+  <!--Finaliza template Inicio-->
   <xsl:template name="Destacados">
     <div class="page-content">
       <section id="featured" class="content-section">
@@ -266,27 +267,25 @@
               </div>
             </xsl:for-each>
             <!--FIN FOREACH-->
-
           </div>
         </div>
       </section>
     </div>
   </xsl:template>
-
+  <!--Finaliza template Destacados-->
   <xsl:template name="Recientes">
     <section id="projects" class="content-section">
       <div class="section-heading">
-        <!--ToDo-->
         <h1>
-          Recent<br>
-            <em>Projects</em>
+          <xsl:value-of select="Seccion/Titulo[@Id=2]/@Normal"/>
+          <br>
+            <em>
+              <xsl:value-of select="Seccion/Titulo[@Id=2]/@Negritas"/>
+            </em>
           </br>
         </h1>
         <p>
-          Praesent pellentesque efficitur magna,
-          <br>
-            sed pellentesque neque malesuada vitae.
-          </br>
+          <xsl:value-of select="Seccion/Titulo[@Id=2]/@Descripcion"/>
         </p>
       </div>
       <div class="section-content">
@@ -303,15 +302,12 @@
               </div>
             </xsl:for-each>
             <!--FIN FOREACH-->
-
-
           </div>
         </div>
       </div>
     </section>
-
   </xsl:template>
-
+  <!--Finaliza template Recientes-->
   <xsl:template name="Acerca">
     <section id="video" class="content-section">
       <div class="row">
@@ -350,21 +346,20 @@
       </div>
     </section>
   </xsl:template>
-
+  <!--Finaliza template Acerca de-->
   <xsl:template name="Entradas">
     <section id="blog" class="content-section">
       <div class="section-heading">
-        <!--ToDo-->
         <h1>
-          Blog<br>
-            <em>Entries</em>
+          <xsl:value-of select="Seccion/Titulo[@Id=4]/@Normal"/>
+          <br>
+            <em>
+              <xsl:value-of select="Seccion/Titulo[@Id=4]/@Negritas"/>
+            </em>
           </br>
         </h1>
         <p>
-          Curabitur hendrerit mauris mollis ipsum vulputate rutrum.
-          <br>
-            Phasellus luctus odio eget dui imperdiet.
-          </br>
+          <xsl:value-of select="Seccion/Titulo[@Id=4]/@Descripcion"/>
         </p>
       </div>
       <div class="section-content">
@@ -400,7 +395,6 @@
                             <p>
                               <xsl:value-of select="Contenido"/>
                             </p>
-
                             <div class="accent-button button">
                               <!--Cambiar la refrencia-->
                               <a href="#contact">Continue Reading</a>
@@ -414,26 +408,19 @@
                 </div>
               </xsl:for-each>
               <!--TERMINA FOREACH-->
-
-
-
-
-
-
             </section>
           </div>
         </div>
       </div>
     </section>
   </xsl:template>
-
+  <!--Finaliza template Entradas-->
   <xsl:template name="Contacto">
     <script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCWeeateTaYGqsHhNcmoDfT7Us-vLDZVPs&amp;sensor=false&amp;language=es"></script>
     <script src="js/geolocalizacion.js"></script>
     <section id="contact" class="content-section">
       <div id="google-map">
         <div id="mapa">
-          <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.8373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi+Central+Market!5e0!3m2!1sen!2sth!4v1532967884907" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen=""></iframe>-->
         </div>
       </div>
       <div id="contact-content">
@@ -483,6 +470,7 @@
         </div>
       </div>
     </section>
+    <!--Script para la geolocalización-->
     <script>
       <![CDATA[
         $(document).ready(function(){      
@@ -492,5 +480,5 @@
     ]]>
     </script>
   </xsl:template>
-
+  <!--finaliza el template Contacto-->
 </xsl:stylesheet>

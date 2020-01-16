@@ -46,10 +46,10 @@
   </Carrusel>
   <Seccion>
     <Titulo Id="1" Normal="Productos" Negritas="Destacados" Descripcion="Estos son los productos populares"></Titulo>
-    <Titulo Id="2" Normal="Productos2" Negritas="Mis" Descripcion="Descripcion de mis productos"></Titulo>
-    <Titulo Id="3" Normal="La Responde" Negritas="Coshipigua" Descripcion="Descripcion de mis productos"></Titulo>
-    <Titulo Id="4" Normal="Productos4" Negritas="Mis" Descripcion="Descripcion de mis productos"></Titulo>
-    <Titulo Id="5" Normal="Contacto" Negritas="Coshipigua" Descripcion="Descripcion de mis productos"></Titulo>
+    <Titulo Id="2" Normal="Proyectos" Negritas="Recientes" Descripcion="Últimos productos realizados"></Titulo>
+    <Titulo Id="3" Normal="La Responde" Negritas="Coshipigua" Descripcion="Preguntas preguntas preguntad preguntas preguntD PEWDUNTs pregfintas"></Titulo>
+    <Titulo Id="4" Normal="Últimas" Negritas="Entradas" Descripcion="Éstas son las últimas entradas que ha bordado la Coshipigua, ¿lindas no?, se verían más lindas en tu pared."></Titulo>
+    <Titulo Id="5" Normal="Contacto" Negritas="Coshipigua" Descripcion="Si deseas ponerte en contacto con La Coshipigua puedes dejarle un mensaje para preguntar cualquier duda que tengas o si deseas hacerle un pedido  o comprarle alguno de sus bordados publicados no dudes en escribirle :)"></Titulo>
   </Seccion>
   <Proyectos>
     <Proyecto>
