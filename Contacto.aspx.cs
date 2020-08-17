@@ -38,7 +38,7 @@ public partial class Contacto : System.Web.UI.Page
         client.Port = 587;
 
         //Nos autenticamos en el SMTP
-        System.Net.NetworkCredential credencials = new System.Net.NetworkCredential("rachel.palomeque@gmail.com", "vowkwqmotfjpodem");
+        System.Net.NetworkCredential credencials = new System.Net.NetworkCredential("rachel.palomeque@gmail.com", "aquí va la contraseña");
         client.UseDefaultCredentials = false;
         client.Credentials = credencials;
 
